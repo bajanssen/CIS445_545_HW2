@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+    <head>
+        <title>Super Cool Website</title><link rel="stylesheet"href="mydesign.css">
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <style type="text/css">
+        .dosbox-container { width: 320px; height: 200px; }
+        .dosbox-container > .dosbox-overlay { background: url(doom.png); background-size: auto}
+        body {
+            background-image: url(cat.jpg);
+            background-repeat: repeat;
+            background-size: 12.5%,12.5%,12.5%;
+            background-color: rgba(255,255,255,0.8);
+            background-blend-mode: lighten;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 style = "background-color: white; text-align:center; font-family: monospace;"><b>Welcome to Brett Janssen's Website for Cool and Attractive People</b></h1>
+        <p style = "font-size: 20px;text-align: center;">Hello, welcome to my website. <br>Hope you enjoy your stay!</p>
+        <table style="width: auto;">
+            <caption>My Favorite Albums</caption>
+            <tr><th>Album Name</th>
+            <th>Band</th>
+            <th colspan = "2">Release</th></tr>
+            <tr><td><a href="https://en.wikipedia.org/wiki/The_Doors_(album)">The Doors</a></td><td>The Doors</td><td>January</td><td>1967</td></tr>
+            <tr><td><a href="https://en.wikipedia.org/wiki/Magical_Mystery_Tour">Magical Mystery Tour</a></td><td>The Beatles</td><td>November</td><td>1967</td></tr>
+            <tr><td><a href="https://en.wikipedia.org/wiki/The_Piper_at_the_Gates_of_Dawn">Piper at the Gates of Dawn</a></td><td>Pink Floyd</td><td>August</td><td>1967</td></tr>
+            <tr><td><a href="https://en.wikipedia.org/wiki/Happy_Trails_(album)">Happy Trails</a></td><td>Quicksilver Messanger Service</td><td>March</td><td>1968</td></tr>
+            <tr><td><a href="https://en.wikipedia.org/wiki/Lizard_(album)">Lizard</a></td><td>King Crimson</td><td>December</td><td>1970</td></tr>
+            <tr><td><a href="https://en.wikipedia.org/wiki/Eldorado_(Electric_Light_Orchestra_album)">Eldorado</a></td><td>Electric Light Orchestra</td><td>September</td><td>1974</td></tr>
+            <tr><td><a href="https://en.wikipedia.org/wiki/The_Smile_Sessions">Smile Sessions</a></td><td>The Beach Boys</td><td>October</td><td>2011</td></tr>
+        </table>
+        <video autoplay="" loop="" controls="" width="auto"  height="auto">
+            <source type="video/mp4" src="video0.mov">
+        </video>
+        <p style = "font-size: 20px;"><b>Click here to play DOOM!</b></p>
+
+        <div id="dosbox"></div>
+        <br/>
+        <script type="text/javascript" src="https://js-dos.com/cdn/js-dos-api.js"></script>
+        <script type="text/javascript">
+            var dosbox = new Dosbox({
+                id: "dosbox",
+                onload: function (dosbox) {
+                    dosbox.run("DOSBOX_DOOM.ZIP", "DOOM.EXE");
+                },
+                onrun: function (dosbox, app) {
+                    console.log("App '" + app + "' is runned");
+                }
+            });
+        </script>
+  
+    </body>
+
+
+</html>
