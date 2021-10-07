@@ -28,3 +28,4 @@
 25. Changed formatting of section headings.
 26. Fixed broken formatting.
 27. Created myjavascript.js
+28. Removed myjavascript.js
