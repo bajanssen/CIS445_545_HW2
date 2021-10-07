@@ -24,3 +24,6 @@
 21. Added script command to run DOOM.WAD through DOOM.exe in dos-box on boot.
 22. Added completion of function to run DOOM.exe via dos-box html integration.
 23. Added favorite games list to coincide with dos-box DOOM.exe emulation.
+24. Added biography section.
+25. Changed formatting of section headings.
+26. Fixed broken formatting.
